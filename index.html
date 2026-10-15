@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Skill Exchange</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8ff;
+            color: #1e293b;
+        }
+
+        header {
+            background: #123b70;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            font-size: 23px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #e4efff, #ffffff);
+        }
+
+        .hero h1 {
+            color: #123b70;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 650px;
+            margin: 0 auto 28px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1769d2;
+            color: white;
+            padding: 13px 24px;
+            border-radius: 7px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background: #0d4d9f;
+        }
+
+        .section {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #123b70;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #dce6f5;
+            flex: 1 1 220px;
+            max-width: 320px;
+        }
+
+        .card h3 {
+            color: #1769d2;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #123b70;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            header {
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>SkillExchange</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Learn Together. Grow Together.</h1>
+
+        <p>
+            Welcome to Student Skill Exchange!
+            Share your knowledge, discover new talents,
+            and learn useful skills from fellow students.
+        </p>
+
+        <a href="#skills" class="button">Explore Skills</a>
+        <a href="#about" class="button">Learn More</a>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Explore Skills</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>💻 Programming</h3>
+                <p>Learn coding, web development, and computer skills.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎨 Creative Skills</h3>
+                <p>Exchange knowledge about design, drawing, and creativity.</p>
+            </div>
+
+            <div class="card">
+                <h3>🗣️ Communication</h3>
+                <p>Improve your speaking, writing, and presentation skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Our Platform</h2>
+
+        <p>
+            Student Skill Exchange is a platform designed
+            to help students teach what they know and learn
+            something new from one another.
+        </p>
+    </section>
+
+    <footer>
+        <p>Student Skill Exchange | Learn, Share, Connect</p>
+    </footer>
+
+</body>
+</html>
